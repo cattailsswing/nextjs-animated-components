@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ReactNode, useState } from "react";
 import { cn } from "@/lib/utils";
-import { MagneticButton, GradientBorderButton } from "@/components/effects/magnetic-button";
+import { MagneticButton, InvertButton } from "@/components/effects/magnetic-button";
 import { GradientText } from "@/components/text/gradient-text";
 import { FadeIn } from "@/components/scroll";
 import { Section, Container, SectionHeader, Footer } from "@/components/layout/sections";
@@ -220,9 +220,9 @@ export function PricingTemplate({
                   {tier.popular ? (
                     <MagneticButton className="w-full">{tier.ctaText}</MagneticButton>
                   ) : (
-                    <GradientBorderButton className="w-full">
+                    <InvertButton className="w-full">
                       {tier.ctaText}
-                    </GradientBorderButton>
+                    </InvertButton>
                   )}
                 </div>
               </FadeIn>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import { MagneticButton, GradientBorderButton } from "@/components/effects/magnetic-button";
+import { MagneticButton, OutlineDrawButton } from "@/components/effects/magnetic-button";
 import { TextGenerateEffect } from "@/components/text";
 import { GradientText } from "@/components/text/gradient-text";
 import { FadeIn, ScrollProgress, InfiniteScroll } from "@/components/scroll";
@@ -148,9 +148,9 @@ export function LandingTemplate({
                 </MagneticButton>
               )}
               {hero.secondaryCTA && (
-                <GradientBorderButton onClick={hero.secondaryCTA.onClick}>
+                <OutlineDrawButton onClick={hero.secondaryCTA.onClick}>
                   {hero.secondaryCTA.text}
-                </GradientBorderButton>
+                </OutlineDrawButton>
               )}
             </motion.div>
           )}

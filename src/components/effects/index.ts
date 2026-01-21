@@ -1,10 +1,19 @@
 export {
+  // Physics & Interaction
   MagneticButton,
-  ShinyButton,
-  GradientBorderButton,
-  ExpandingButton,
-  LiquidButton,
-  GlitchButton,
+  MorphButton,
+  FluidButton,
+  DepthButton,
+  ElasticButton,
+  RippleButton,
+  // Text Effects
+  SplitButton,
+  GravityButton,
+  ScrambleButton,
+  // Border & Visual
+  OutlineDrawButton,
+  BorderFlowButton,
+  InvertButton,
 } from "./magnetic-button";
 export { CustomCursor, CursorTrail, SpotlightCursor } from "./custom-cursor";
 export { AnimatedInput, GlowingSearch, AnimatedCheckbox } from "./animated-input";

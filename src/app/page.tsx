@@ -24,9 +24,13 @@ import { GridBeams } from "@/components/backgrounds/grid";
 import { Sparkles } from "@/components/backgrounds/particles";
 import {
   MagneticButton,
-  ShinyButton,
-  GradientBorderButton,
-  LiquidButton,
+  FluidButton,
+  SplitButton,
+  ScrambleButton,
+  DepthButton,
+  OutlineDrawButton,
+  InvertButton,
+  ElasticButton,
 } from "@/components/effects/magnetic-button";
 
 // Dynamic imports for Three.js components (no SSR)
@@ -172,7 +176,7 @@ export default function HomePage() {
             transition={{ delay: 1.2 }}
           >
             <MagneticButton>Get Started</MagneticButton>
-            <GradientBorderButton>View Components</GradientBorderButton>
+            <OutlineDrawButton>View Components</OutlineDrawButton>
           </motion.div>
         </div>
       </section>
@@ -287,14 +291,21 @@ export default function HomePage() {
           <SectionHeader
             badge="Interactions"
             title="Buttons That Feel Alive"
-            description="Magnetic effects, liquid fills, glitch hovers, and gradient borders."
+            description="Physics-based interactions, text effects, and organic animations."
           />
 
           <div className="flex flex-wrap items-center justify-center gap-6">
             <MagneticButton>Magnetic</MagneticButton>
-            <ShinyButton>Shiny</ShinyButton>
-            <GradientBorderButton>Gradient Border</GradientBorderButton>
-            <LiquidButton>Liquid Fill</LiquidButton>
+            <FluidButton>Fluid Blob</FluidButton>
+            <ScrambleButton>SCRAMBLE</ScrambleButton>
+            <SplitButton>Split Text</SplitButton>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
+            <DepthButton>3D Depth</DepthButton>
+            <OutlineDrawButton>Draw Border</OutlineDrawButton>
+            <InvertButton>Invert</InvertButton>
+            <ElasticButton>Elastic</ElasticButton>
           </div>
         </Container>
       </Section>
@@ -314,7 +325,7 @@ export default function HomePage() {
                 Floating shapes, interactive globes, particle systems.
                 React Three Fiber makes 3D accessible. We made it copy-paste ready.
               </p>
-              <GradientBorderButton>Explore 3D Components</GradientBorderButton>
+              <OutlineDrawButton>Explore 3D Components</OutlineDrawButton>
             </FadeIn>
 
             <FadeIn direction="right">

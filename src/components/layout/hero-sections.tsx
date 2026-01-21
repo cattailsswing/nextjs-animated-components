@@ -9,7 +9,7 @@ import { Spotlight, Spotlights } from "@/components/backgrounds/spotlight";
 import { GridBackground, GridBeams } from "@/components/backgrounds/grid";
 import { GradientBlob } from "@/components/backgrounds/gradient-blur";
 import { Meteors } from "@/components/backgrounds/meteors";
-import { MagneticButton, ShinyButton, GradientBorderButton } from "@/components/effects/magnetic-button";
+import { MagneticButton, OutlineDrawButton } from "@/components/effects/magnetic-button";
 
 // Hero variant 1: Spotlight hero
 interface SpotlightHeroProps {
@@ -77,9 +77,9 @@ export function SpotlightHero({
             </MagneticButton>
           )}
           {secondaryCTA && (
-            <GradientBorderButton>
+            <OutlineDrawButton>
               {secondaryCTA.text}
-            </GradientBorderButton>
+            </OutlineDrawButton>
           )}
         </motion.div>
       </div>
