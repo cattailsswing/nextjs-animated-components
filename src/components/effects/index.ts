@@ -14,6 +14,12 @@ export {
   OutlineDrawButton,
   BorderFlowButton,
   InvertButton,
+  ShinyButton,
+  // Premium Icon Components (no generic AI look)
+  IconButton,
+  FeatureIcon,
+  MinimalCardButton,
+  ListItemButton,
 } from "./magnetic-button";
 export {
   CustomCursor,

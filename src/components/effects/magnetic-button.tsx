@@ -705,3 +705,300 @@ export function InvertButton({
     </motion.button>
   );
 }
+
+// =============================================================================
+// Shiny Button - Sweep shine effect on hover
+// =============================================================================
+// Gradient highlight sweeps across the button from left to right
+
+interface ShinyButtonProps {
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
+}
+
+export function ShinyButton({
+  children,
+  className,
+  onClick,
+}: ShinyButtonProps) {
+  return (
+    <motion.button
+      className={cn(
+        "relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl overflow-hidden group",
+        className
+      )}
+      onClick={onClick}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      {/* Shine sweep effect */}
+      <div
+        className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"
+        style={{
+          background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent)",
+        }}
+      />
+      <span className="relative z-10">{children}</span>
+    </motion.button>
+  );
+}
+
+// =============================================================================
+// Premium Icon Button - NOT your typical AI-generated icon button
+// =============================================================================
+// Subtle, refined, no generic gradients. Feels handcrafted.
+
+interface IconButtonProps {
+  icon: React.ReactNode;
+  label?: string;
+  className?: string;
+  onClick?: () => void;
+  variant?: "ghost" | "outline" | "solid" | "glass";
+  size?: "sm" | "md" | "lg";
+}
+
+export function IconButton({
+  icon,
+  label,
+  className,
+  onClick,
+  variant = "ghost",
+  size = "md",
+}: IconButtonProps) {
+  const sizeClasses = {
+    sm: "w-10 h-10",
+    md: "w-12 h-12",
+    lg: "w-14 h-14",
+  };
+
+  const iconSizeClasses = {
+    sm: "w-4 h-4",
+    md: "w-5 h-5",
+    lg: "w-6 h-6",
+  };
+
+  const variantClasses = {
+    ghost: "bg-transparent hover:bg-white/5 text-zinc-400 hover:text-white",
+    outline: "bg-transparent border border-zinc-800 hover:border-zinc-600 text-zinc-400 hover:text-white",
+    solid: "bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white",
+    glass: "bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 text-zinc-300 hover:text-white",
+  };
+
+  return (
+    <motion.button
+      className={cn(
+        "relative flex items-center justify-center rounded-xl transition-colors duration-200",
+        sizeClasses[size],
+        variantClasses[variant],
+        label && "gap-3 w-auto px-4",
+        className
+      )}
+      onClick={onClick}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+    >
+      <span className={iconSizeClasses[size]}>{icon}</span>
+      {label && <span className="text-sm font-medium">{label}</span>}
+    </motion.button>
+  );
+}
+
+// =============================================================================
+// Feature Icon - Icon with text, premium style (not the generic rounded box)
+// =============================================================================
+
+interface FeatureIconProps {
+  icon: React.ReactNode;
+  title: string;
+  description?: string;
+  className?: string;
+  onClick?: () => void;
+  badge?: string;
+}
+
+export function FeatureIcon({
+  icon,
+  title,
+  description,
+  className,
+  onClick,
+  badge,
+}: FeatureIconProps) {
+  return (
+    <motion.button
+      className={cn(
+        "group flex items-center gap-4 text-left w-full",
+        onClick && "cursor-pointer",
+        className
+      )}
+      onClick={onClick}
+      whileHover={onClick ? { x: 4 } : undefined}
+      transition={{ type: "spring", stiffness: 400, damping: 25 }}
+    >
+      {/* Icon container - subtle, no generic gradient */}
+      <div className="relative flex-shrink-0">
+        <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 group-hover:text-white group-hover:border-zinc-700 transition-colors duration-200">
+          {icon}
+        </div>
+      </div>
+
+      {/* Text */}
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-2">
+          <span className="text-white font-medium group-hover:text-white transition-colors">
+            {title}
+          </span>
+          {badge && (
+            <span className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+              {badge}
+            </span>
+          )}
+        </div>
+        {description && (
+          <span className="text-sm text-zinc-500 group-hover:text-zinc-400 transition-colors">
+            {description}
+          </span>
+        )}
+      </div>
+
+      {/* Arrow indicator on hover */}
+      {onClick && (
+        <motion.div
+          className="text-zinc-600 group-hover:text-zinc-400 transition-colors"
+          initial={{ opacity: 0, x: -4 }}
+          whileHover={{ opacity: 1, x: 0 }}
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </motion.div>
+      )}
+    </motion.button>
+  );
+}
+
+// =============================================================================
+// Minimal Card Button - Clean, no-BS feature card
+// =============================================================================
+
+interface MinimalCardButtonProps {
+  icon: React.ReactNode;
+  title: string;
+  description?: string;
+  className?: string;
+  onClick?: () => void;
+  active?: boolean;
+}
+
+export function MinimalCardButton({
+  icon,
+  title,
+  description,
+  className,
+  onClick,
+  active = false,
+}: MinimalCardButtonProps) {
+  return (
+    <motion.button
+      className={cn(
+        "group relative flex flex-col items-start gap-4 p-6 rounded-2xl text-left transition-all duration-200",
+        active
+          ? "bg-zinc-900 border border-zinc-700"
+          : "bg-transparent border border-zinc-800/50 hover:border-zinc-700/50 hover:bg-zinc-900/50",
+        className
+      )}
+      onClick={onClick}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.99 }}
+    >
+      {/* Icon - clean, no gradient box */}
+      <div className={cn(
+        "w-10 h-10 rounded-lg flex items-center justify-center transition-colors duration-200",
+        active
+          ? "bg-white text-black"
+          : "bg-zinc-800 text-zinc-400 group-hover:bg-zinc-700 group-hover:text-white"
+      )}>
+        {icon}
+      </div>
+
+      {/* Content */}
+      <div>
+        <h3 className="font-medium text-white mb-1">{title}</h3>
+        {description && (
+          <p className="text-sm text-zinc-500">{description}</p>
+        )}
+      </div>
+
+      {/* Subtle corner accent when active */}
+      {active && (
+        <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-white" />
+      )}
+    </motion.button>
+  );
+}
+
+// =============================================================================
+// List Item Button - For navigation lists, settings, etc.
+// =============================================================================
+
+interface ListItemButtonProps {
+  icon?: React.ReactNode;
+  title: string;
+  subtitle?: string;
+  value?: string;
+  className?: string;
+  onClick?: () => void;
+  chevron?: boolean;
+}
+
+export function ListItemButton({
+  icon,
+  title,
+  subtitle,
+  value,
+  className,
+  onClick,
+  chevron = true,
+}: ListItemButtonProps) {
+  return (
+    <motion.button
+      className={cn(
+        "group flex items-center gap-4 w-full px-4 py-3 rounded-xl text-left",
+        "hover:bg-zinc-900/50 transition-colors duration-150",
+        className
+      )}
+      onClick={onClick}
+      whileTap={{ scale: 0.99 }}
+    >
+      {/* Icon */}
+      {icon && (
+        <div className="w-9 h-9 rounded-lg bg-zinc-800/50 flex items-center justify-center text-zinc-400 group-hover:text-zinc-300 transition-colors">
+          {icon}
+        </div>
+      )}
+
+      {/* Text */}
+      <div className="flex-1 min-w-0">
+        <div className="text-sm font-medium text-zinc-200">{title}</div>
+        {subtitle && (
+          <div className="text-xs text-zinc-500">{subtitle}</div>
+        )}
+      </div>
+
+      {/* Value or chevron */}
+      {value ? (
+        <span className="text-sm text-zinc-500">{value}</span>
+      ) : chevron ? (
+        <svg
+          className="w-4 h-4 text-zinc-600 group-hover:text-zinc-400 transition-colors"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      ) : null}
+    </motion.button>
+  );
+}
