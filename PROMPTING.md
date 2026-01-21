@@ -87,6 +87,34 @@ Style: Dark theme, Awwwards-worthy, bold typography.
 
 ## Enhancing an Existing Site
 
+### Quick Reference - What to Say
+
+| Want This | Say This |
+|-----------|----------|
+| Better hero | "Replace my hero with SpotlightHero, keep my text" |
+| Better buttons | "Replace all buttons with MagneticButton" |
+| Better cards | "Convert my cards to TiltCard with GlowCard hover" |
+| Smooth scroll | "Add Lenis smooth scroll and ScrollProgress bar" |
+| Animations | "Add FadeIn to sections, StaggerOnScroll to cards" |
+| SEO | "Add SoftwareJsonLd ($29/mo, 4.8 stars), GoogleAnalytics (G-XXX)" |
+| Less generic | "Replace generic gradient icon boxes with FeatureIcon" |
+| Dark mode | "Wrap app with ThemeProvider, add ThemeToggle to navbar" |
+
+### Basic Enhancement (Copy-Paste This)
+
+```
+I have an existing Next.js site. Enhance it with awwwards-ui:
+
+- Replace hero with SpotlightHero (keep my text)
+- Replace buttons with MagneticButton
+- Convert feature cards to TiltCard in BentoGrid
+- Add FadeIn animation to sections
+- Add Lenis smooth scroll
+- Add GoogleAnalytics (G-XXXXX)
+
+Keep my existing colors and layout. Don't change navigation.
+```
+
 ### Template Prompt
 
 ```
