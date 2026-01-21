@@ -518,3 +518,205 @@ export function EventJsonLd(props: EventProps) {
 export function CourseJsonLd(props: CourseProps) {
   return <JsonLd data={createCourseSchema(props)} />;
 }
+
+// =============================================================================
+// Review Schema - For star ratings in search results
+// =============================================================================
+
+export interface ReviewProps {
+  itemReviewed: {
+    type: "Product" | "LocalBusiness" | "Organization" | "SoftwareApplication" | "Course";
+    name: string;
+    image?: string;
+  };
+  reviewRating: {
+    ratingValue: number;
+    bestRating?: number;
+    worstRating?: number;
+  };
+  author: {
+    name: string;
+    url?: string;
+  };
+  datePublished?: string;
+  reviewBody?: string;
+}
+
+export function createReviewSchema(props: ReviewProps): WithContext<Review> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: {
+      "@type": props.itemReviewed.type,
+      name: props.itemReviewed.name,
+      image: props.itemReviewed.image,
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: props.reviewRating.ratingValue,
+      bestRating: props.reviewRating.bestRating || 5,
+      worstRating: props.reviewRating.worstRating || 1,
+    },
+    author: {
+      "@type": "Person",
+      name: props.author.name,
+      url: props.author.url,
+    },
+    datePublished: props.datePublished,
+    reviewBody: props.reviewBody,
+  };
+}
+
+export function ReviewJsonLd(props: ReviewProps) {
+  return <JsonLd data={createReviewSchema(props)} />;
+}
+
+// =============================================================================
+// Aggregate Rating Schema - For overall star ratings
+// =============================================================================
+
+export interface AggregateRatingProps {
+  itemReviewed: {
+    type: "Product" | "LocalBusiness" | "Organization" | "SoftwareApplication" | "Course" | "CreativeWork";
+    name: string;
+    image?: string;
+    url?: string;
+  };
+  ratingValue: number;
+  ratingCount: number;
+  reviewCount?: number;
+  bestRating?: number;
+  worstRating?: number;
+}
+
+export function createAggregateRatingSchema(props: AggregateRatingProps) {
+  return {
+    "@context": "https://schema.org",
+    "@type": props.itemReviewed.type,
+    name: props.itemReviewed.name,
+    image: props.itemReviewed.image,
+    url: props.itemReviewed.url,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: props.ratingValue,
+      ratingCount: props.ratingCount,
+      reviewCount: props.reviewCount || props.ratingCount,
+      bestRating: props.bestRating || 5,
+      worstRating: props.worstRating || 1,
+    },
+  };
+}
+
+export function AggregateRatingJsonLd(props: AggregateRatingProps) {
+  return <JsonLd data={createAggregateRatingSchema(props)} />;
+}
+
+// =============================================================================
+// Service Schema - For service businesses
+// =============================================================================
+
+export interface ServiceProps {
+  name: string;
+  description: string;
+  provider: {
+    name: string;
+    url?: string;
+  };
+  serviceType?: string;
+  areaServed?: string | string[];
+  offers?: {
+    price: number | string;
+    priceCurrency: string;
+  };
+  aggregateRating?: {
+    ratingValue: number;
+    reviewCount: number;
+  };
+}
+
+export function createServiceSchema(props: ServiceProps) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: props.name,
+    description: props.description,
+    provider: {
+      "@type": "Organization",
+      name: props.provider.name,
+      url: props.provider.url,
+    },
+    serviceType: props.serviceType,
+    areaServed: props.areaServed,
+    offers: props.offers
+      ? {
+          "@type": "Offer",
+          price: props.offers.price,
+          priceCurrency: props.offers.priceCurrency,
+        }
+      : undefined,
+    aggregateRating: props.aggregateRating
+      ? {
+          "@type": "AggregateRating",
+          ratingValue: props.aggregateRating.ratingValue,
+          reviewCount: props.aggregateRating.reviewCount,
+        }
+      : undefined,
+  };
+}
+
+export function ServiceJsonLd(props: ServiceProps) {
+  return <JsonLd data={createServiceSchema(props)} />;
+}
+
+// =============================================================================
+// How-To Schema - For tutorial/guide pages
+// =============================================================================
+
+export interface HowToStep {
+  name: string;
+  text: string;
+  image?: string;
+  url?: string;
+}
+
+export interface HowToProps {
+  name: string;
+  description: string;
+  image?: string;
+  estimatedCost?: {
+    value: number | string;
+    currency: string;
+  };
+  totalTime?: string; // ISO 8601 duration (e.g., "PT30M")
+  steps: HowToStep[];
+}
+
+export function createHowToSchema(props: HowToProps): WithContext<HowTo> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: props.name,
+    description: props.description,
+    image: props.image,
+    estimatedCost: props.estimatedCost
+      ? {
+          "@type": "MonetaryAmount",
+          value: props.estimatedCost.value,
+          currency: props.estimatedCost.currency,
+        }
+      : undefined,
+    totalTime: props.totalTime,
+    step: props.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+      image: step.image,
+      url: step.url,
+    })),
+  };
+}
+
+export function HowToJsonLd(props: HowToProps) {
+  return <JsonLd data={createHowToSchema(props)} />;
+}

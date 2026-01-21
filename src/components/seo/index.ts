@@ -20,7 +20,7 @@ export type { SEOSetupProps } from "./seo-setup";
 export { JsonLd } from "./json-ld";
 
 // -----------------------------------------------------------------------------
-// Pre-built JSON-LD Components (11 schemas)
+// Pre-built JSON-LD Components (15 schemas)
 // -----------------------------------------------------------------------------
 export {
   OrganizationJsonLd,
@@ -34,6 +34,12 @@ export {
   LocalBusinessJsonLd,
   EventJsonLd,
   CourseJsonLd,
+  // Star Ratings & Reviews
+  ReviewJsonLd,
+  AggregateRatingJsonLd,
+  // Services & Tutorials
+  ServiceJsonLd,
+  HowToJsonLd,
 } from "./json-ld";
 
 // -----------------------------------------------------------------------------
@@ -51,6 +57,12 @@ export {
   createLocalBusinessSchema,
   createEventSchema,
   createCourseSchema,
+  // Star Ratings & Reviews
+  createReviewSchema,
+  createAggregateRatingSchema,
+  // Services & Tutorials
+  createServiceSchema,
+  createHowToSchema,
 } from "./json-ld";
 
 // -----------------------------------------------------------------------------
@@ -73,6 +85,13 @@ export type {
   LocalBusinessProps,
   EventProps,
   CourseProps,
+  // Star Ratings & Reviews
+  ReviewProps,
+  AggregateRatingProps,
+  // Services & Tutorials
+  ServiceProps,
+  HowToProps,
+  HowToStep,
 } from "./json-ld";
 
 // -----------------------------------------------------------------------------
@@ -97,3 +116,66 @@ export type {
 // -----------------------------------------------------------------------------
 export { siteConfig, generateMetadata } from "@/lib/seo";
 export type { SiteConfig, PageSEO } from "@/lib/seo";
+
+// -----------------------------------------------------------------------------
+// Visual Breadcrumbs (UX + SEO)
+// -----------------------------------------------------------------------------
+export {
+  Breadcrumbs,
+  CollapsibleBreadcrumbs,
+  AutoBreadcrumbs,
+} from "./breadcrumbs";
+export type {
+  BreadcrumbProps,
+  CollapsibleBreadcrumbsProps,
+  AutoBreadcrumbsProps,
+} from "./breadcrumbs";
+
+// -----------------------------------------------------------------------------
+// Social Share (Link Building)
+// -----------------------------------------------------------------------------
+export {
+  SocialShare,
+  NativeShare,
+  ShareCountButton,
+} from "./social-share";
+export type {
+  SocialShareProps,
+  ShareData,
+  NativeShareProps,
+  ShareCountButtonProps,
+} from "./social-share";
+
+// -----------------------------------------------------------------------------
+// SEO Analyzer (Audit Tool)
+// -----------------------------------------------------------------------------
+export { SEOAnalyzer, analyzeSEO } from "./seo-analyzer";
+export type { SEOAnalyzerProps, SEOAnalysis, SEOIssue } from "./seo-analyzer";
+
+// -----------------------------------------------------------------------------
+// Analytics (GA4, Plausible, Fathom, Umami, PostHog)
+// -----------------------------------------------------------------------------
+export {
+  // Universal
+  Analytics,
+  // Individual providers
+  GoogleAnalytics,
+  PlausibleAnalytics,
+  FathomAnalytics,
+  UmamiAnalytics,
+  PostHogAnalytics,
+  // Event tracking helpers
+  trackEvent,
+  trackPlausibleEvent,
+  trackFathomGoal,
+  trackUmamiEvent,
+  trackPostHogEvent,
+} from "./analytics";
+export type {
+  AnalyticsConfig,
+  GoogleAnalyticsProps,
+  PlausibleProps,
+  FathomProps,
+  UmamiProps,
+  PostHogProps,
+} from "./analytics";
