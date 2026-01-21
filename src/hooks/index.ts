@@ -21,3 +21,8 @@ export {
   getMetricDescription,
 } from "./use-web-vitals";
 export type { Metric, MetricName, WebVitalsThresholds } from "./use-web-vitals";
+export {
+  useReducedMotion,
+  useMotionSafe,
+  getReducedMotionPreference,
+} from "./use-reduced-motion";
