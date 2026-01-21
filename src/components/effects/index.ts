@@ -15,7 +15,17 @@ export {
   BorderFlowButton,
   InvertButton,
 } from "./magnetic-button";
-export { CustomCursor, CursorTrail, SpotlightCursor } from "./custom-cursor";
+export {
+  CustomCursor,
+  CursorTrail,
+  SpotlightCursor,
+  MagneticCursor,
+  MorphingCursor,
+  TextLabelCursor,
+  ParticleCursor,
+  GlowCursor,
+  CrosshairCursor,
+} from "./custom-cursor";
 export { AnimatedInput, GlowingSearch, AnimatedCheckbox } from "./animated-input";
 export {
   ThemeProvider,
@@ -24,3 +34,14 @@ export {
   ThemeToggleSwitch,
   ThemeSelector,
 } from "./theme-toggle";
+export {
+  ImageReveal,
+  ParallaxImage,
+  VideoReveal,
+  ImageComparison,
+  ImageHoverReveal,
+  MediaGallery,
+  ScrollVideo,
+  KenBurnsImage,
+  DistortionImage,
+} from "./media-reveal";

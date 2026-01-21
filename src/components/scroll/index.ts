@@ -10,3 +10,16 @@ export {
   ScrollProgress,
   ZoomParallax,
 } from "./scroll-animations";
+export {
+  PinnedSection,
+  HorizontalScrollSection,
+  ScrubAnimation,
+  ParallaxLayer,
+  ParallaxContainer,
+  ScrollProgressAnimation,
+  RevealOnScroll,
+  TextRevealScrub,
+  CounterAnimation,
+  SplitScreenScroll,
+  ZoomScroll,
+} from "./gsap-scroll";

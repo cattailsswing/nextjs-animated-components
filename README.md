@@ -2,7 +2,7 @@
 
 > The ultimate web animation toolkit. Build Awwwards-worthy sites without hiring a $50k agency.
 
-**GSAP + Framer Motion + Lenis + Three.js + 50+ components. All in one.**
+**GSAP + Framer Motion + Lenis + Three.js + 80+ components. All in one.**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)
@@ -32,6 +32,14 @@ And call it a day.
 - `GridBackground` / `GridBeams` / `PerspectiveGrid` - Grid patterns with effects
 - `GradientBlob` / `GradientBackground` - Animated gradient meshes
 - `Particles` / `Sparkles` - Canvas-based particle systems
+
+**Shader Backgrounds (NEW!)**
+- `NoiseGradientBackground` - Animated noise-based gradient with simplex noise
+- `LiquidMetalBackground` - Metallic liquid surface with reflections
+- `WaveDistortionBackground` - Sine wave distortion patterns
+- `PlasmaBackground` - Classic plasma animation effect
+- `OrganicBlobBackground` - Morphing organic blob shapes
+- `GlitchBackground` - Cyberpunk glitch effect with scanlines
 
 ### Text Animations
 - `TextGenerateEffect` - Word-by-word text reveal
@@ -63,6 +71,17 @@ And call it a day.
 - `ScrollProgress` - Progress indicator bar
 - `ZoomParallax` - Image zoom on scroll
 
+**GSAP ScrollTrigger (NEW!)**
+- `PinnedSection` - Pin content while scrolling through viewport
+- `HorizontalScrollSection` - Timeline-based horizontal scroll with pinning
+- `ScrubAnimation` - Animate elements based on scroll position (fade, scale, rotate, slideX, slideY)
+- `ParallaxLayer` / `ParallaxContainer` - Multi-layer parallax with different speeds
+- `RevealOnScroll` - Staggered reveal animations on scroll
+- `TextRevealScrub` - Text that reveals character-by-character based on scroll
+- `CounterAnimation` - Numbers that count up on scroll
+- `SplitScreenScroll` - Two sections scrolling at different rates
+- `ZoomScroll` - Element that zooms based on scroll position
+
 ### 3D Components
 - `FloatingShapes` - Distorted spheres, toruses, icosahedrons
 - `ParticleField` - 3D particle systems
@@ -81,6 +100,25 @@ And call it a day.
 - `AnimatedInput` - Floating label inputs
 - `GlowingSearch` - Search with glow effect
 - `AnimatedCheckbox` - Animated checkmark
+
+**Advanced Cursors (NEW!)**
+- `MagneticCursor` - Cursor that sticks to interactive elements
+- `MorphingCursor` - Changes shape based on hovered element (circle, arrow, text, play, drag)
+- `TextLabelCursor` - Shows contextual text labels on hover
+- `ParticleCursor` - Leaves particle trails when moving
+- `GlowCursor` - Large circular glow that follows cursor
+- `CrosshairCursor` - Precise crosshair with optional coordinates
+
+**Image/Video Reveal (NEW!)**
+- `ImageReveal` - Various reveal animations (wipe, blinds, pixelate, curtain, zoom, split, diagonal)
+- `ParallaxImage` - Image with parallax scrolling effect
+- `VideoReveal` - Video that reveals on scroll (fade, scale, wipe, mask)
+- `ImageComparison` - Before/after slider comparison
+- `ImageHoverReveal` - Reveals different image on hover
+- `MediaGallery` - Gallery with lightbox
+- `ScrollVideo` - Video that scrubs based on scroll position
+- `KenBurnsImage` - Slow zoom/pan Ken Burns effect
+- `DistortionImage` - Image distortion on mouse movement
 
 ### Layouts
 - `SpotlightHero` - Hero with spotlight background
