@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/itsjwill/nextjs-animated-components"
   },
-  "homepage": "https://github.com/itsjwill/nextjs-animated-components",
+  "homepage": "https://nextjs-animated-components.vercel.app",
   "bugs": {
     "url": "https://github.com/itsjwill/nextjs-animated-components/issues"
   },
