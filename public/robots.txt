@@ -14,7 +14,7 @@ User-agent: Bingbot
 Allow: /
 
 # Host
-Host: https://awwwards-ui.com
+Host: https://motioncraft.dev
 
 # Sitemaps
-Sitemap: https://awwwards-ui.com/sitemap.xml
+Sitemap: https://motioncraft.dev/sitemap.xml

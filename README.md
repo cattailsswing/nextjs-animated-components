@@ -1,16 +1,42 @@
-# Motion Craft - Website Design 2026
-**For builders who want Awwwards-level sites, not another Tailwind template**
+# MotionCraft — 110+ Award-Winning Animation Components for Next.js
 
-[![Last Updated](https://img.shields.io/badge/last%20updated-January%202026-brightgreen)]()
-[![Components](https://img.shields.io/badge/components-95+-purple)]()
-[![Directions](https://img.shields.io/badge/design%20directions-4-blue)]()
-[![🏴‍☠️ Join The School](https://img.shields.io/badge/🏴‍☠️%20Join%20The%20School-black)](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c)
+### Free alternative to Aceternity UI, Magic UI, 21st.dev, Shadcn Motion, and Framer Templates
 
-Stop building sites that look like every other Next.js template. This is the **only** animation toolkit you need — 95+ components, 4 design directions, GSAP + Framer Motion + Three.js. Direction-aware design system that makes your site look like it cost $50k.
+<div align="center">
 
-I'm tired of seeing "UI libraries" that are just repackaged Tailwind components. This one's different. Every component here is battle-tested, direction-aware, and designed to win awards.
+![Stars](https://img.shields.io/github/stars/itsjwill/motion-plunder?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Updated](https://img.shields.io/badge/Updated-2026-blue?style=for-the-badge)
+![Components](https://img.shields.io/badge/Components-110+-purple?style=for-the-badge)
+![v2.0](https://img.shields.io/badge/v2.0-15%20New%20Interactive-ff6b35?style=for-the-badge)
 
-> 🏴‍☠️ **Want to build alongside people who actually ship?** [Join the school](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c) - we build AI products and premium sites weekly. No lurkers.
+</div>
+
+> **110+ copy-paste animation components. 4 runtime-switchable design systems. GSAP + Framer Motion + Three.js + Lenis. Makes any site look $50K. MIT licensed. Zero subscription.**
+
+Every other UI library is a dressed-up Tailwind template. This is the real plunder — 110+ battle-hardened animation components, 4 complete design systems switchable at runtime, all the components from 21st.dev + MagicUI + Aceternity in one chest.
+
+> 🏴‍☠️ **Want to build alongside people who actually ship?** [Join the school](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c) — we build AI products and premium sites weekly. No lurkers.
+
+### What's New in v2.0 (15 Interactive Components)
+
+| Component | Inspiration | What It Does |
+|-----------|-------------|-------------|
+| **Dock** | macOS / 21st.dev | Magnification dock with spring physics |
+| **Marquee** | MagicUI | Infinite scroll marquee, pause on hover |
+| **Lamp** | Aceternity | Dramatic light cone expanding from top |
+| **NumberTicker** | MagicUI | Animated counter on scroll into view |
+| **MorphingText** | 21st.dev | Smooth text morphing between words |
+| **SpotlightCard** | Aceternity | Cursor-tracking radial spotlight on cards |
+| **Magnetic** | Hover.dev | Elements that attract toward cursor |
+| **AnimatedBeam** | MagicUI | SVG beam animations connecting elements |
+| **RippleButton** | Material | Click ripple effect |
+| **AnimatedTabs** | 21st.dev | Tabs with spring layout animations |
+| **LiquidGlass** | iOS 26 | Glassmorphism with 3D tilt refraction |
+| **BorderBeam** | MagicUI | Light beam traveling around borders |
+| **Confetti** | Vercel | Particle celebration on click |
+| **ScrollReveal** | Aceternity | 10 reveal variants triggered on scroll |
+| **OrbitingCircles** | MagicUI | Elements orbiting a center point |
 
 ---
 
@@ -54,7 +80,7 @@ Clone it, run `npm run dev`, and switch between the 4 directions. Watch everythi
 
 | Feature | Aceternity | Magic UI | Shadcn Motion | **MotionCraft** |
 |---------|------------|----------|---------------|-----------------|
-| Components | ~50 | ~40 | ~20 | **95+** |
+| Components | ~50 | ~40 | ~20 | **110+** |
 | Design Directions | 1 | 1 | 1 | **4 (runtime switch)** |
 | Dark/Light Mode | Yes | Yes | Yes | **Per-direction themes** |
 | Motion Presets | None | None | None | **Direction-aware curves** |
@@ -87,8 +113,8 @@ Clone it, run `npm run dev`, and switch between the 4 directions. Watch everythi
 ## Quick Start (Copy-Paste Ready)
 
 ```bash
-git clone https://github.com/itsjwill/motioncraft.git
-cd motioncraft
+git clone https://github.com/itsjwill/website-design-2026.git
+cd website-design-2026
 npm install
 npm run dev
 ```
@@ -151,10 +177,11 @@ Infinite Scroll, Parallax, Text Parallax, Sticky Reveal, Horizontal Scroll, Fade
 
 **Pro tip**: Add Lenis smooth scroll + FadeIn to any existing site and it immediately feels 10x more premium.
 
-### Interactive Effects (15+) - Staff Pick: FluidCursor
-Magnetic Button, Shiny Button, Gradient Border, Liquid Button, Glitch Button, Custom Cursor (6 variants), Cursor Trail, Spotlight Cursor, Animated Input, Image Reveal (7 modes)
+### Interactive Effects (30+) - Staff Pick: Dock + SpotlightCard
+**NEW v2.0**: Dock, Marquee, Lamp, NumberTicker, MorphingText, SpotlightCard, Magnetic, AnimatedBeam, RippleButton, AnimatedTabs, LiquidGlass, BorderBeam, Confetti, ScrollReveal (10 variants), OrbitingCircles
+**Original**: Magnetic Button, Shiny Button, Gradient Border, Liquid Button, Glitch Button, Custom Cursor (6 variants), Cursor Trail, Spotlight Cursor, Animated Input, Image Reveal (7 modes), FluidCursor
 
-**Hidden gem**: FluidCursor (metaball cursor) is the most unique thing in this library. Nobody else has it.
+**The plunder**: We raided 21st.dev, MagicUI, Aceternity and brought back 15 new interactive components. The Dock with magnification, SpotlightCards with cursor tracking, and LiquidGlass with iOS-style refraction are insane.
 
 ### Premium Buttons (10) - Staff Pick: Liquid Metal
 Shader Distortion, Ink Bleed, Cloth, Portal, Swarm, Liquid Metal, Reactive Shadow, Sticker Peel, Thermal, Momentum
@@ -258,15 +285,41 @@ See **[PROMPTING.md](./PROMPTING.md)** for AI prompt templates to build sites wi
 
 ---
 
+## Cost Comparison — Why Pay for Components?
+
+| Feature | Aceternity Pro | Magic UI Pro | Framer Templates | **MotionCraft** |
+|---------|----------------|--------------|------------------|-----------------|
+| Price | $49-149/yr | $49/yr | $50-200 each | **$0 (MIT)** |
+| Components | ~50 | ~40 | 10-20 per template | **110+** |
+| Design Directions | 1 | 1 | 1 | **4 (runtime)** |
+| 3D Components | Few | None | None | **5+ (Three.js)** |
+| Scroll Video | No | No | No | **Apple-style scrub** |
+| SEO Toolkit | None | None | None | **15 JSON-LD schemas** |
+| Updates | Quarterly | Monthly | None after purchase | **Continuous** |
+
+**Bottom line**: MotionCraft gives you everything the paid libraries offer, plus direction-aware design, 3D components, and a complete SEO toolkit. For free.
+
+---
+
+## More From Us
+
+| Repo | What It Does | Stars |
+|------|-------------|-------|
+| [vanta](https://github.com/itsjwill/vanta) | Open source AI video engine (Synthesia alternative) | ![Stars](https://img.shields.io/github/stars/itsjwill/vanta) |
+| [ai-agents-that-ship](https://github.com/itsjwill/ai-agents-that-ship) | Production-ready AI agent frameworks | ![Stars](https://img.shields.io/github/stars/itsjwill/ai-agents-that-ship) |
+| [generative-ai-uncensored](https://github.com/itsjwill/generative-ai-uncensored) | The real guide to generative AI tools | ![Stars](https://img.shields.io/github/stars/itsjwill/generative-ai-uncensored) |
+
+---
+
 ## Credits
 
-Inspired by [Aceternity UI](https://ui.aceternity.com), [Magic UI](https://magicui.design), [21st.dev](https://21st.dev)
+Inspired by [Aceternity UI](https://ui.aceternity.com), [Magic UI](https://magicui.design), [21st.dev](https://21st.dev), [Hover.dev](https://hover.dev)
 
 Built with [GSAP](https://greensock.com/gsap/), [Framer Motion](https://framer.com/motion/), [Lenis](https://lenis.studiofreight.com/), [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
 
 ## License
 
-MIT
+MIT — Take what you need. Give nothing back.
 
 ---
 
@@ -276,7 +329,7 @@ MIT
 
 # 🏴‍☠️ Ready to Actually Build Something Award-Worthy?
 
-### You just read through 95+ components. Now what?
+### You just scrolled through 110+ components. Now what?
 
 **Most people bookmark this and forget about it.**
 
@@ -292,7 +345,7 @@ The builders who win? They pick a direction, clone this, and ship something this
 
 🏴‍☠️ Weekly builds with real revenue potential
 🏴‍☠️ Direct access to people shipping premium sites daily
-🏴‍☠️ Skip the tutorial hell - build alongside people who've done it
+🏴‍☠️ Skip the tutorial hell — build alongside people who've done it
 🏴‍☠️ The shortcuts, prompts, and stacks that actually work
 
 <br>
