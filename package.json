@@ -1,15 +1,15 @@
 {
-  "name": "motioncraft",
-  "version": "0.1.0",
-  "description": "The ultimate web animation toolkit. 95+ direction-aware components across 4 design systems. GSAP + Framer Motion + Lenis + Three.js. Build award-winning sites.",
+  "name": "nextjs-animated-components",
+  "version": "2.0.0",
+  "description": "110+ free animated React components for Next.js. Framer Motion, GSAP, Three.js, Tailwind CSS. Dock, Spotlight Cards, Glassmorphism, Scroll Animations, 3D effects. Copy-paste ready.",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/itsjwill/motioncraft"
+    "url": "https://github.com/itsjwill/nextjs-animated-components"
   },
-  "homepage": "https://motioncraft.dev",
+  "homepage": "https://github.com/itsjwill/nextjs-animated-components",
   "bugs": {
-    "url": "https://github.com/itsjwill/motioncraft/issues"
+    "url": "https://github.com/itsjwill/nextjs-animated-components/issues"
   },
   "scripts": {
     "dev": "next dev",
@@ -48,23 +48,24 @@
     "next-sitemap": "^4.2.3"
   },
   "keywords": [
-    "motioncraft",
-    "animation",
-    "motion-design",
-    "gsap",
-    "framer-motion",
-    "lenis",
-    "three.js",
-    "react",
-    "nextjs",
-    "tailwindcss",
-    "ui-components",
-    "scroll-animations",
-    "3d-web",
-    "design-system",
-    "web-animation",
+    "animated-components",
     "react-components",
-    "animation-library"
+    "nextjs-components",
+    "framer-motion",
+    "gsap",
+    "tailwindcss",
+    "animation-library",
+    "scroll-animations",
+    "glassmorphism",
+    "spotlight-card",
+    "dock-component",
+    "threejs",
+    "ui-components",
+    "design-system",
+    "landing-page",
+    "web-animation",
+    "copy-paste",
+    "free-components"
   ],
   "author": "itsjwill",
   "license": "MIT"

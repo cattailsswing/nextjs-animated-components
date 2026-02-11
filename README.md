@@ -1,315 +1,240 @@
-# MotionCraft — 110+ Award-Winning Animation Components for Next.js
+# Next.js Animated Components — 110+ Free React Animation Components
 
-### Free alternative to Aceternity UI, Magic UI, 21st.dev, Shadcn Motion, and Framer Templates
+### The free, open-source alternative to Aceternity UI, Magic UI, 21st.dev, and Shadcn Motion
 
 <div align="center">
 
-![Stars](https://img.shields.io/github/stars/itsjwill/motion-plunder?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/itsjwill/nextjs-animated-components?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Updated](https://img.shields.io/badge/Updated-2026-blue?style=for-the-badge)
 ![Components](https://img.shields.io/badge/Components-110+-purple?style=for-the-badge)
-![v2.0](https://img.shields.io/badge/v2.0-15%20New%20Interactive-ff6b35?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge)
 
 </div>
 
-> **110+ copy-paste animation components. 4 runtime-switchable design systems. GSAP + Framer Motion + Three.js + Lenis. Makes any site look $50K. MIT licensed. Zero subscription.**
-
-Every other UI library is a dressed-up Tailwind template. This is the real plunder — 110+ battle-hardened animation components, 4 complete design systems switchable at runtime, all the components from 21st.dev + MagicUI + Aceternity in one chest.
-
-> 🏴‍☠️ **Want to build alongside people who actually ship?** [Join the school](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c) — we build AI products and premium sites weekly. No lurkers.
-
-### What's New in v2.0 (15 Interactive Components)
-
-| Component | Inspiration | What It Does |
-|-----------|-------------|-------------|
-| **Dock** | macOS / 21st.dev | Magnification dock with spring physics |
-| **Marquee** | MagicUI | Infinite scroll marquee, pause on hover |
-| **Lamp** | Aceternity | Dramatic light cone expanding from top |
-| **NumberTicker** | MagicUI | Animated counter on scroll into view |
-| **MorphingText** | 21st.dev | Smooth text morphing between words |
-| **SpotlightCard** | Aceternity | Cursor-tracking radial spotlight on cards |
-| **Magnetic** | Hover.dev | Elements that attract toward cursor |
-| **AnimatedBeam** | MagicUI | SVG beam animations connecting elements |
-| **RippleButton** | Material | Click ripple effect |
-| **AnimatedTabs** | 21st.dev | Tabs with spring layout animations |
-| **LiquidGlass** | iOS 26 | Glassmorphism with 3D tilt refraction |
-| **BorderBeam** | MagicUI | Light beam traveling around borders |
-| **Confetti** | Vercel | Particle celebration on click |
-| **ScrollReveal** | Aceternity | 10 reveal variants triggered on scroll |
-| **OrbitingCircles** | MagicUI | Elements orbiting a center point |
+> **110+ copy-paste animated components for React & Next.js.** Framer Motion, GSAP, Three.js, Tailwind CSS. Dock, Spotlight Cards, Glassmorphism, Scroll Animations, 3D effects, and more. Just clone and run.
 
 ---
 
-## See It In Action
-
-| Cyberpunk Direction | Freestyle Direction |
-|---------------------|---------------------|
-| ![Cyberpunk](public/screenshots/cyberpunk.png) | ![Freestyle](public/screenshots/freestyle.png) |
-
-**Same components. Completely different feelings.** Switch directions at runtime — colors, fonts, motion curves, and component aesthetics all adapt instantly.
-
----
-
-## If You Only Try 3 Things, Try These
-
-**DirectionPreloader** - The first thing users see. Cyberpunk gets a glitch counter, Luxury gets a gold wipe reveal, Kinetic gets a spring-bounce progress ring. Sets the tone for everything.
-
-**MagneticButton** - Buttons that follow your cursor with spring physics. Makes every CTA feel premium. I use this on every project now.
-
-**TiltCard + GlowCard** - 3D perspective tilt on hover with cursor-tracking glow. Makes any feature grid look $50k. Dead simple to implement.
-
----
-
-## Where Should I Start?
-
-**Building a new landing page from scratch?**
-Start with → **SpotlightHero** (hero) → **BentoGrid + TiltCard** (features) → **MagneticButton** (CTAs)
-
-**Have an existing site that looks generic?**
-Go straight to → **Lenis smooth scroll** + **FadeIn animations** + **MagneticButton** replacements
-
-**Want the full Awwwards experience?**
-Add these layers: **DirectionPreloader** → **Particles/GradientMesh background** → **MouseParallax** → **ScrollReveal sections**
-
-**Just want to play around?**
-Clone it, run `npm run dev`, and switch between the 4 directions. Watch everything transform.
-
----
-
-## The Real Comparison (Why Not Aceternity/Magic UI?)
-
-| Feature | Aceternity | Magic UI | Shadcn Motion | **MotionCraft** |
-|---------|------------|----------|---------------|-----------------|
-| Components | ~50 | ~40 | ~20 | **110+** |
-| Design Directions | 1 | 1 | 1 | **4 (runtime switch)** |
-| Dark/Light Mode | Yes | Yes | Yes | **Per-direction themes** |
-| Motion Presets | None | None | None | **Direction-aware curves** |
-| 3D Components | Few | None | None | **5+ (Three.js)** |
-| Scroll Video | No | No | No | **Apple-style frame scrub** |
-| Audio Reactive | No | No | No | **Yes** |
-| Fluid Cursor | No | No | No | **Metaball cursor** |
-| SEO Toolkit | None | None | None | **15 JSON-LD schemas** |
-| Programmatic Pages | None | None | None | **37 pages** |
-| Preloader | None | None | None | **4 unique animations** |
-| Mouse Parallax | No | No | No | **Interactive depth layers** |
-
-**Quick verdict**: Others give you components. MotionCraft gives you a complete design system that adapts to your creative direction.
-
----
-
-## The 4 Directions (This Is What Makes It Different)
-
-| Direction | Vibe | Fonts | Colors | Motion |
-|-----------|------|-------|--------|--------|
-| **Luxury** | Pagani/Richard Mille | Space Grotesk + Inter | Black, white, gold | Slow, deliberate `[0.16, 1, 0.3, 1]` |
-| **Cyberpunk** | Neon/Glitch/Terminal | JetBrains Mono + IBM Plex | Navy, cyan, magenta | Snappy, glitchy `[0.76, 0, 0.24, 1]` |
-| **Kinetic** | Stripe/Vercel/Linear | Outfit + DM Sans | White, violet, teal | Spring physics `stiffness: 200` |
-| **Freestyle** | Bold/Unexpected | Syne + Manrope | Warm dark, coral, emerald | Varied, unpredictable |
-
-**Real talk**: This is the killer feature. One codebase, four completely different aesthetics. Client wants to go from "clean corporate" to "cyberpunk gaming"? Change one variable.
-
----
-
-## Quick Start (Copy-Paste Ready)
+## Quick Start
 
 ```bash
-git clone https://github.com/itsjwill/website-design-2026.git
-cd website-design-2026
+git clone https://github.com/itsjwill/nextjs-animated-components.git
+cd nextjs-animated-components
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) — switch directions with the picker and watch everything transform.
-
-### Drop-In Usage
-
-```tsx
-import { TiltCard, MagneticButton, FadeIn } from "motioncraft";
-
-export default function Hero() {
-  return (
-    <FadeIn direction="up" delay={0.2}>
-      <TiltCard intensity={15}>
-        <h1>Your Next Award Winner</h1>
-        <MagneticButton>Get Started</MagneticButton>
-      </TiltCard>
-    </FadeIn>
-  );
-}
-```
-
-### Make Any Hero Premium (30 seconds)
-
-```tsx
-import { SpotlightHero, TextGenerateEffect, MagneticButton } from "motioncraft";
-
-export default function Hero() {
-  return (
-    <SpotlightHero>
-      <TextGenerateEffect words="Build Websites That Win Awards" />
-      <MagneticButton size="lg">Explore Components</MagneticButton>
-    </SpotlightHero>
-  );
-}
-```
+Open **[http://localhost:3000](http://localhost:3000)** to see every component in action. Use the direction picker to switch between 4 design systems in real time.
 
 ---
 
-## The Components That Don't Suck
+## What's Inside
 
-### Backgrounds (12+) - Staff Pick: GradientMesh
-Aurora, Spotlight, Meteors, Grid, Gradient Mesh, Particles, Sparkles, Infinite Grid, Noise Gradient Shader, Liquid Metal, Wave Distortion, Plasma, Organic Blob, Glitch
+### Interactive Components (16)
 
-**Honest review**: GradientMesh is the one that makes clients go "whoa". Interactive, smooth, and works in all directions. Particles are solid for cyberpunk/kinetic.
+| Component | What It Does |
+|-----------|-------------|
+| **Dock** | macOS-style magnification dock with spring physics |
+| **Marquee** | Infinite scroll marquee, horizontal/vertical, pause on hover |
+| **Lamp** | Dramatic light cone effect (Aceternity-style) |
+| **NumberTicker** | Animated number counter triggered on scroll |
+| **MorphingText** | Smooth text morphing, typewriter, flip, word rotate |
+| **SpotlightCard** | Card with cursor-tracking radial spotlight |
+| **Magnetic** | Elements that attract toward cursor on hover |
+| **AnimatedBeam** | SVG beam animations connecting elements |
+| **RippleButton** | Material-design click ripple effect |
+| **AnimatedTabs** | Tabs with spring layout animations (3 variants) |
+| **LiquidGlass** | iOS-style glassmorphism with 3D tilt |
+| **BorderBeam** | Light beam traveling around element borders |
+| **Confetti** | Particle celebration on click or full-screen |
+| **ScrollReveal** | 10 reveal variants (fade, zoom, flip, blur, slide) |
+| **OrbitingCircles** | Elements orbiting a center point |
+| **WavyBackground** | Animated grid patterns and dot patterns |
 
-### Text Animations (8+) - Staff Pick: TextGenerateEffect
-Text Generate, Typewriter, Flip Words, Character/Word/Line Reveal, Gradient Text, Neon Text, Shiny Text
+### Backgrounds (9)
 
-**Real talk**: TextGenerateEffect is the workhorse — it just works and looks premium. Character Reveal is for when you want to flex.
+Aurora, Spotlight, Meteors, Grid, Gradient Mesh, Particles, Sparkles, Infinite Grid, Shader Backgrounds (Noise Gradient, Liquid Metal, Wave Distortion, Plasma)
 
-### Cards (10+) - Staff Pick: TiltCard + GlowCard combo
-Tilt Card, 3D Card, Glow Card, Border Beam, Evervault Card, Bento Grid, Feature Card, Wobble Card, Stack Cards, Living System
+### Scroll Animations (6)
 
-**Use case**: BentoGrid with TiltCards inside is the move for any feature section. Stack Cards for case study scroll.
+Infinite Scroll, Parallax, Text Parallax, Sticky Reveal, Horizontal Scroll, GSAP ScrollTrigger suite, Fade/Scale/Rotate on Scroll
 
-### Scroll Animations (15+) - Staff Pick: StickyReveal
-Infinite Scroll, Parallax, Text Parallax, Sticky Reveal, Horizontal Scroll, Fade/Scale/Rotate on Scroll, Stagger, Zoom Parallax, GSAP ScrollTrigger suite
+### Text Animations (4)
 
-**Pro tip**: Add Lenis smooth scroll + FadeIn to any existing site and it immediately feels 10x more premium.
+Text Generate Effect, Character/Word/Line Reveal, Gradient Text, Split Screen Text
 
-### Interactive Effects (30+) - Staff Pick: Dock + SpotlightCard
-**NEW v2.0**: Dock, Marquee, Lamp, NumberTicker, MorphingText, SpotlightCard, Magnetic, AnimatedBeam, RippleButton, AnimatedTabs, LiquidGlass, BorderBeam, Confetti, ScrollReveal (10 variants), OrbitingCircles
-**Original**: Magnetic Button, Shiny Button, Gradient Border, Liquid Button, Glitch Button, Custom Cursor (6 variants), Cursor Trail, Spotlight Cursor, Animated Input, Image Reveal (7 modes), FluidCursor
+### Cards (7)
 
-**The plunder**: We raided 21st.dev, MagicUI, Aceternity and brought back 15 new interactive components. The Dock with magnification, SpotlightCards with cursor tracking, and LiquidGlass with iOS-style refraction are insane.
+Tilt Card, Glow Card, Bento Grid, Feature Showcase, Hover Card, Stack Cards, Living System
 
-### Premium Buttons (10) - Staff Pick: Liquid Metal
+### Effects (11)
+
+Magnetic Button, Magnetic Gallery, Custom Cursor (6 variants), Fluid Cursor, Mouse Parallax, Audio Reactive, Animated Input, Media Reveal (7 modes), Text Distortion, Reveal on Hover
+
+### Premium Buttons (10)
+
 Shader Distortion, Ink Bleed, Cloth, Portal, Swarm, Liquid Metal, Reactive Shadow, Sticker Peel, Thermal, Momentum
 
-**Real talk**: These are the "I have time to impress" buttons. Liquid Metal and Ink Bleed are absurd in the best way.
+### 3D Components (5)
 
-### 3D Components (5+)
-Floating Shapes, Particle Field, Interactive Globe, Particle Morph, Scroll Progress 3D
+Floating Shapes, Interactive Globe, Neural Network, Particle Morph, Scroll Progress 3D
 
-**Performance note**: All use `next/dynamic` with `ssr: false`. Won't tank your Lighthouse score.
+### Layout & Navigation (5)
 
----
+Animated Masonry, Hero Sections, Premium Layouts, Morphing Nav, Section Reveal
 
-## Hidden Gems Nobody Talks About
+### Transitions (3)
 
-**ScrollVideo** - Apple-style video frame scrubbing on scroll. Way harder than it sounds to implement from scratch.
+Noise Transition (Perlin dissolve), Page Transition, Preloader (4 variants per direction)
 
-**AudioReactive** - Elements pulse with audio input. Perfect for music/creative portfolios.
+### Templates (3)
 
-**NoiseTransition** - Perlin noise dissolve between pages. Makes basic Next.js routing feel cinematic.
+Landing Page, About Page, Pricing Page — all direction-aware
 
-**AnimatedMasonry** - Masonry grid with staggered entrance + filter transitions. Not the boring CSS grid.
+### SEO Toolkit (11)
 
-**SplitScreenText** - Text splits apart revealing content behind. Simple concept, huge visual impact.
-
----
-
-## Overhyped Things to Skip (Sorry, Not Sorry)
-
-**Basic parallax libraries** - Lenis + GSAP ScrollTrigger does everything they do, better.
-
-**"AI-generated" UI libraries** - If every site using it looks the same, it's not premium.
-
-**CSS-only animation libraries** - You'll hit limitations immediately. GSAP/Framer Motion exist for a reason.
-
-**Component libraries without motion tokens** - Components without coordinated animation feel random, not designed.
+Auto SEO, 15 JSON-LD schemas, Analytics (GA, Plausible, Fathom, Umami, PostHog), Social Share (9 platforms), Web Vitals, Breadcrumbs, RSS/Atom/JSON feeds, SEO Analyzer
 
 ---
 
-## The Stack
+## How to Use a Component
 
-| Library | Purpose | Why This One |
-|---------|---------|--------------|
-| **GSAP** | Complex timelines, ScrollTrigger | Industry standard, nothing touches it |
-| **Framer Motion** | Declarative animations, gestures | Best React integration, period |
-| **Lenis** | Smooth scroll | Smooth, predictable, lightweight |
-| **React Three Fiber** | 3D scenes | Three.js without the pain |
-| **Tailwind CSS** | Styling | Fast, consistent, direction-aware |
-| **TypeScript** | Type safety | Full prop interfaces for everything |
-| **next-sitemap** | Auto sitemaps | Zero-config SEO |
-| **schema-dts** | JSON-LD types | Type-safe structured data |
+Every component is self-contained. Copy the file you need, or import directly:
+
+```tsx
+import { SpotlightCard } from "@/components/interactive/spotlight-card";
+import { ScrollReveal } from "@/components/interactive/scroll-reveal";
+import { Dock, DockItem } from "@/components/interactive/dock";
+import { TiltCard } from "@/components/cards/tilt-card";
+import { MagneticButton } from "@/components/effects/magnetic-button";
+```
+
+### Example: Add a Spotlight Card
+
+```tsx
+<SpotlightCard>
+  <h3>Feature Title</h3>
+  <p>Feature description goes here.</p>
+</SpotlightCard>
+```
+
+### Example: Scroll Reveal Any Section
+
+```tsx
+<ScrollReveal variant="fade-up" delay={0.2}>
+  <div>This fades up when scrolled into view</div>
+</ScrollReveal>
+```
+
+### Example: macOS Dock
+
+```tsx
+<Dock magnification={60} distance={140}>
+  <DockItem label="Home"><HomeIcon /></DockItem>
+  <DockItem label="Search"><SearchIcon /></DockItem>
+  <DockItem label="Settings"><GearIcon /></DockItem>
+</Dock>
+```
 
 ---
 
-## SEO Toolkit (Complete)
+## 4 Design Directions (Runtime Switchable)
 
-Not just animations — full SEO infrastructure:
+One codebase, four completely different aesthetics. Switch with a single variable — colors, fonts, motion curves, and component styles all change instantly.
 
-- **AutoSEO** — Zero-config keyword extraction + JSON-LD generation
-- **15 JSON-LD schemas** — Organization, Article, Product, FAQ, Software, Video, Event, and more
-- **Analytics** — Google, Plausible, Fathom, Umami, PostHog
-- **Social Share** — 9 platforms
-- **Web Vitals** — CLS, FCP, FID, INP, LCP, TTFB tracking
-- **Breadcrumbs** — Visual + structured data
-- **RSS/Atom/JSON Feed** generators
-- **SEOAnalyzer** — Dev-mode audit tool
+| Direction | Vibe | Fonts | Motion |
+|-----------|------|-------|--------|
+| **Luxury** | Pagani, Richard Mille | Space Grotesk + Inter | Slow, deliberate easing |
+| **Cyberpunk** | Neon, Glitch, Terminal | JetBrains Mono + IBM Plex | Snappy, glitchy |
+| **Kinetic** | Stripe, Vercel, Linear | Outfit + DM Sans | Spring physics |
+| **Freestyle** | Bold, Unexpected | Syne + Manrope | Varied, unpredictable |
+
+---
+
+## Tech Stack
+
+| Library | Purpose |
+|---------|---------|
+| **Next.js 14** | App Router, React Server Components |
+| **Framer Motion** | Declarative animations, gestures, layout |
+| **GSAP** | Complex timelines, ScrollTrigger |
+| **Three.js / R3F** | 3D scenes and effects |
+| **Lenis** | Smooth scrolling |
+| **Tailwind CSS** | Styling with direction-aware CSS variables |
+| **TypeScript** | Full type safety, prop interfaces for everything |
+
+---
+
+## Comparison
+
+| Feature | Aceternity UI | Magic UI | Shadcn Motion | **This Repo** |
+|---------|--------------|----------|---------------|---------------|
+| Price | $49-149/yr | $49/yr | Free | **Free (MIT)** |
+| Components | ~50 | ~40 | ~20 | **110+** |
+| Design Systems | 1 | 1 | 1 | **4 (runtime)** |
+| 3D Components | Few | None | None | **5 (Three.js)** |
+| Scroll Video | No | No | No | **Yes** |
+| GSAP Integration | No | No | No | **Yes** |
+| SEO Toolkit | None | None | None | **15 JSON-LD schemas** |
+| Preloader | None | None | None | **4 variants** |
 
 ---
 
 ## Performance
 
 - First load JS: < 200KB
-- All canvas/shader/Three.js: `next/dynamic` with `ssr: false`
+- All 3D/canvas/shader components: `next/dynamic` with `ssr: false`
 - Fonts: `next/font` with display swap
-- `prefers-reduced-motion` respected everywhere
+- `prefers-reduced-motion` respected throughout
 - Lighthouse 90+
 
 ---
 
-## The Real Talk Section
+## FAQ
 
-**Is this production-ready?** Yes. TypeScript throughout, proper prop interfaces, no hydration errors, accessibility considered.
+**Can I use individual components without the whole project?**
+Yes. Every component is self-contained. Copy the file you need into your own project.
 
-**Will it slow my site down?** No. Heavy stuff (Three.js, shaders, canvas) loads async after first paint. Static fallbacks for everything.
+**Does it work with existing Tailwind sites?**
+Yes. The direction system uses CSS variables and `data-direction` attributes. Won't conflict with your setup.
 
-**Can I use just some components?** Absolutely. Cherry-pick what you need. They're self-contained.
+**What if I only want one design direction?**
+Pick one and use it. The multi-direction system is opt-in.
 
-**Does it work with existing Tailwind sites?** Yes. The direction system uses CSS variables and data attributes. Won't conflict.
+**Will it slow my site down?**
+No. Heavy components (Three.js, shaders, canvas) load async. Static fallbacks for everything.
 
-**What if I don't want 4 directions?** Pick one and stick with it. The direction system is opt-in.
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── backgrounds/      # 9 animated backgrounds
+│   ├── buttons/          # 10 premium button effects
+│   ├── cards/            # 7 card components
+│   ├── core/             # Direction picker, preloader, nav
+│   ├── effects/          # 11 cursor/interaction effects
+│   ├── interactive/      # 16 interactive components (NEW)
+│   ├── layout/           # Hero sections, masonry, layouts
+│   ├── navigation/       # Morphing nav
+│   ├── scroll/           # 6 scroll animation systems
+│   ├── seo/              # 11 SEO utilities
+│   ├── templates/        # 3 page templates
+│   ├── text/             # 4 text animation effects
+│   ├── three/            # 5 3D components
+│   └── transitions/      # 3 page transitions
+└── app/
+    ├── page.tsx          # Homepage showcasing all components
+    └── _sections/        # 9 demo sections
+```
 
 ---
 
 ## Contributing
 
-See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for development setup and guidelines.
-
-## Prompting Guide
-
-See **[PROMPTING.md](./PROMPTING.md)** for AI prompt templates to build sites with MotionCraft.
-
----
-
-## Cost Comparison — Why Pay for Components?
-
-| Feature | Aceternity Pro | Magic UI Pro | Framer Templates | **MotionCraft** |
-|---------|----------------|--------------|------------------|-----------------|
-| Price | $49-149/yr | $49/yr | $50-200 each | **$0 (MIT)** |
-| Components | ~50 | ~40 | 10-20 per template | **110+** |
-| Design Directions | 1 | 1 | 1 | **4 (runtime)** |
-| 3D Components | Few | None | None | **5+ (Three.js)** |
-| Scroll Video | No | No | No | **Apple-style scrub** |
-| SEO Toolkit | None | None | None | **15 JSON-LD schemas** |
-| Updates | Quarterly | Monthly | None after purchase | **Continuous** |
-
-**Bottom line**: MotionCraft gives you everything the paid libraries offer, plus direction-aware design, 3D components, and a complete SEO toolkit. For free.
-
----
-
-## More From Us
-
-| Repo | What It Does | Stars |
-|------|-------------|-------|
-| [vanta](https://github.com/itsjwill/vanta) | Open source AI video engine (Synthesia alternative) | ![Stars](https://img.shields.io/github/stars/itsjwill/vanta) |
-| [ai-agents-that-ship](https://github.com/itsjwill/ai-agents-that-ship) | Production-ready AI agent frameworks | ![Stars](https://img.shields.io/github/stars/itsjwill/ai-agents-that-ship) |
-| [generative-ai-uncensored](https://github.com/itsjwill/generative-ai-uncensored) | The real guide to generative AI tools | ![Stars](https://img.shields.io/github/stars/itsjwill/generative-ai-uncensored) |
-
----
+PRs welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Credits
 
@@ -319,45 +244,26 @@ Built with [GSAP](https://greensock.com/gsap/), [Framer Motion](https://framer.c
 
 ## License
 
-MIT — Take what you need. Give nothing back.
+MIT — use however you want.
 
 ---
 
-<br><br>
+## More Open Source
+
+| Repo | Description |
+|------|-------------|
+| [vanta](https://github.com/itsjwill/vanta) | Open source AI video engine |
+| [ai-agents-that-ship](https://github.com/itsjwill/ai-agents-that-ship) | Production-ready AI agent frameworks |
+| [generative-ai-uncensored](https://github.com/itsjwill/generative-ai-uncensored) | The real guide to generative AI tools |
+
+---
 
 <div align="center">
 
-# 🏴‍☠️ Ready to Actually Build Something Award-Worthy?
+### Want to build alongside people who ship?
 
-### You just scrolled through 110+ components. Now what?
+**[Join the community](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c)** — we build AI products and premium sites weekly.
 
-**Most people bookmark this and forget about it.**
-
-The builders who win? They pick a direction, clone this, and ship something this week.
-
-<br>
-
-## **[Join The School](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c)**
-
-**Where builders turn repos into revenue.**
-
-<br>
-
-🏴‍☠️ Weekly builds with real revenue potential
-🏴‍☠️ Direct access to people shipping premium sites daily
-🏴‍☠️ Skip the tutorial hell — build alongside people who've done it
-🏴‍☠️ The shortcuts, prompts, and stacks that actually work
-
-<br>
-
-### This repo tells you WHAT exists. The school shows you HOW to profit from it.
-
-<br>
-
-[![JOIN THE SCHOOL](https://img.shields.io/badge/🏴‍☠️%20JOIN%20THE%20SCHOOL-000000?style=for-the-badge)](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c)
-
-<br>
-
-**Stop building basic. Start building legendary.**
+[![Join](https://img.shields.io/badge/JOIN-000000?style=for-the-badge)](https://www.skool.com/ai-elite-9507/about?ref=67521860944147018da6145e3db6e51c)
 
 </div>
