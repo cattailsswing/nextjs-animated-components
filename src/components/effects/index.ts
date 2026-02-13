@@ -51,3 +51,10 @@ export {
   KenBurnsImage,
   DistortionImage,
 } from "./media-reveal";
+export {
+  LiquidGlass,
+  SpotlightCard,
+  AnimatedBeam,
+  CursorReveal,
+  ProgressiveBlur,
+} from "./premium-effects";

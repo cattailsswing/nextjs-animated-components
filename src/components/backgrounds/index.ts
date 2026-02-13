@@ -12,3 +12,9 @@ export {
   OrganicBlobBackground,
   GlitchBackground,
 } from "./shader-backgrounds";
+export {
+  MeshGradient,
+  DotPattern,
+  GridPattern,
+  FilmGrain,
+} from "./premium-backgrounds";
