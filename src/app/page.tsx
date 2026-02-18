@@ -10,6 +10,7 @@ import { SiteNav } from "@/components/core/site-nav";
 
 export default function HomePage() {
   return (
+<div style={{background:"red",color:"white",padding:"10px",textAlign:"center",position:"fixed",top:0,zIndex:9999,width:"100%"}}>V2 ROLLBACK TEST</div>
     <main className="relative">
       <SiteNav />
       <HeroSection />
