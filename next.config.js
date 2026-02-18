@@ -83,4 +83,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-throw new Error('intentional break');
